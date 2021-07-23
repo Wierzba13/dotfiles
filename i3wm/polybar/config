@@ -23,9 +23,10 @@ background-alt = #80000000
 ;foreground = ${xrdb:color7:#222}
 foreground = #ffffff
 foreground-alt = #eeeeee
-primary = #2679db
+;primary = #bd93f9 - Violet
+primary = #5699af
 secondary = #ffffff
-alert = #fc4138
+alert = #ff5555
 
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
@@ -61,7 +62,7 @@ font-5 = Font Awesome 5 Brands:pixelsize=9;2
 
 modules-left = i3
 modules-center = xwindow spotify
-modules-right = pacman-updates filesystem pulseaudio xkeyboard memory cpu system-fan-speed wlan date powermenu
+modules-right = pulseaudio xkeyboard wlan date powermenu
 
 ;separator = |
 
@@ -89,7 +90,7 @@ type = custom/script
 format-prefix = " "
 exec = $HOME/.config/polybar/system-fan-speed.sh
 interval = 30
-format-underline = #969696
+;format-underline = #969696
 
 [module/pacman-updates]
 type = custom/script
@@ -170,6 +171,9 @@ wrapping-scroll = false
 ; Only show workspaces on the same output as the bar
 ;pin-workspaces = true
 
+
+
+; With icons
 ws-icon-0 = 1;
 ws-icon-1 = 2;
 ws-icon-2 = 3;
@@ -182,28 +186,28 @@ ws-icon-8 = 9;
 ws-icon-9 = 10;
 
 label-mode-padding = 2
-label-mode-foreground = #000
+label-mode-foreground = #ffffff
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
-label-focused = %icon%
+label-focused = %name%
 label-focused-background = ${colors.background-alt}
 label-focused-underline= ${colors.primary}
 label-focused-padding = 2
 
 ; unfocused = Inactive workspace on any monitor
-;label-unfocused = %index%
-;label-unfocused = %icon%
+label-unfocused = %index%
+;label-unfocused = %name%
 label-unfocused-padding = 2
 
 ; visible = Active workspace on unfocused monitor
-label-visible = %icon%
+label-visible = %name%
 label-visible-background = ${self.label-focused-background}
 label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
 
 ; urgent = Workspace with urgency hint set
-label-urgent = %icon% %index%
+label-urgent = %name% %index%
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
@@ -251,7 +255,7 @@ type = internal/cpu
 interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = ${colors.primary}
+;format-underline = ${colors.primary}
 label = %percentage:2%%
 
 [module/memory]
@@ -259,7 +263,7 @@ type = internal/memory
 interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = ${colors.alert}
+;format-underline = ${colors.alert}
 label = %percentage_used%%
 
 [module/wlan]
@@ -311,8 +315,9 @@ time = %H:%M
 time-alt = %H:%M:%S
 
 format-prefix = 
-format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #ba26f0
+;format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-foreground = #f0ff0f
+;format-underline = #ba26f0
 
 label = %date%  %time%
 
@@ -342,6 +347,7 @@ bar-volume-fill-font = 2
 bar-volume-empty = <
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-alt}
+click-right = pavucontrol
 
 [module/alsa]
 type = internal/alsa
@@ -438,9 +444,9 @@ label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
 
 menu-0-0 = reboot
-menu-0-0-exec = systemctl reboot
+menu-0-0-exec = reboot now
 menu-0-1 = power off
-menu-0-1-exec = systemctl powerof
+menu-0-1-exec = shutdown now
 
 
 
