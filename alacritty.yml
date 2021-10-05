@@ -1,0 +1,264 @@
+# Config created by Raul Wierzbinski:             https://github.com/Wierzba13
+# Link to color schemes for alacritty:            https://github.com/eendroroy/alacritty-theme
+# File will be in ~/.config/alacritty/alacritty.yml
+
+window:
+  dimensions:
+    columns: 170
+    lines: 50
+
+  padding:
+    x: 10
+    y: 10
+
+
+  # Values for `decorations`:
+  #     - full: Borders and title bar
+  #     - none: Neither borders nor title bar
+  decorations: full
+  opacity: 0.5
+  
+  title: Alacritty
+  dynamic_title: false
+
+  # Window class (Linux/BSD only):
+  class:
+    instance: Alacritty     # Application instance name
+    general: Alacritty      # General application class
+
+scrolling:
+  history: 5000
+
+
+# Font configuration
+font:
+  # Normal (roman) font face
+  normal:
+    family: monospace
+    style: Regular
+
+  bold:
+    family: monospace
+    style: Bold
+
+  italic:
+    family: monospace
+    style: Italic
+
+  size: 12.0
+
+  offset:
+    x: 0
+    y: 4
+
+# Colors (Ayu Dark)
+colors:
+  # Default colors
+  primary:
+    background: '0x0A0E14'
+    foreground: '0xB3B1AD'
+
+  # Normal colors
+  normal:
+    black:   '0x01060E'
+    red:     '0xEA6C73'
+    green:   '0x91B362'
+    yellow:  '0xF9AF4F'
+    blue:    '0x53BDFA'
+    magenta: '0xFAE994'
+    cyan:    '0x90E1C6'
+    white:   '0xC7C7C7'
+
+  # Bright colors
+  bright:
+    black:   '0x686868'
+    red:     '0xF07178'
+    green:   '0xC2D94C'
+    yellow:  '0xFFB454'
+    blue:    '0x59C2FF'
+    magenta: '0xFFEE99'
+    cyan:    '0x95E6CB'
+    white:   '0xFFFFFF'
+
+
+# Colors (Hyper)
+# colors:
+#   # Default colors
+#   primary:
+#     background: '0x000000'
+#     foreground: '0xffffff'
+#   cursor:
+#     text: '0xF81CE5'
+#     cursor: '0xffffff'
+
+#   # Normal colors
+#   normal:
+#     black:   '0x000000'
+#     red:     '0xfe0100'
+#     green:   '0x33ff00'
+#     yellow:  '0xfeff00'
+#     blue:    '0x0066ff'
+#     magenta: '0xcc00ff'
+#     cyan:    '0x00ffff'
+#     white:   '0xd0d0d0'
+
+#   # Bright colors
+#   bright:
+#     black:   '0x808080'
+#     red:     '0xfe0100'
+#     green:   '0x33ff00'
+#     yellow:  '0xfeff00'
+#     blue:    '0x0066ff'
+#     magenta: '0xcc00ff'
+#     cyan:    '0x00ffff'
+#     white:   '0xFFFFFF'
+
+
+# Colors (Tokyo Night)
+# Source: https://github.com/zatchheems/tokyo-night-alacritty-theme
+# colors:
+#   # Default colors
+#   primary:
+#     background: '0x1a1b26'
+#     foreground: '0xa9b1d6'
+
+#   # Normal colors
+#   normal:
+#     black:   '0x32344a'
+#     red:     '0xf7768e'
+#     green:   '0x9ece6a'
+#     yellow:  '0xe0af68'
+#     blue:    '0x7aa2f7'
+#     magenta: '0xad8ee6'
+#     cyan:    '0x449dab'
+#     white:   '0x787c99'
+
+#   # Bright colors
+#   bright:
+#     black:   '0x444b6a'
+#     red:     '0xff7a93'
+#     green:   '0xb9f27c'
+#     yellow:  '0xff9e64'
+#     blue:    '0x7da6ff'
+#     magenta: '0xbb9af7'
+#     cyan:    '0x0db9d7'
+#     white:   '0xacb0d0'
+
+
+# Colors (Gruvbox dark)
+# colors:
+#   # Default colors
+#   primary:
+#     # hard contrast: background = '0x1d2021'
+#     background: '0x282828'
+#     # soft contrast: background = '0x32302f'
+#     foreground: '0xebdbb2'
+
+#   # Normal colors
+#   normal:
+#     black:   '0x282828'
+#     red:     '0xcc241d'
+#     green:   '0x98971a'
+#     yellow:  '0xd79921'
+#     blue:    '0x458588'
+#     magenta: '0xb16286'
+#     cyan:    '0x689d6a'
+#     white:   '0xa89984'
+
+#   # Bright colors
+#   bright:
+#     black:   '0x928374'
+#     red:     '0xfb4934'
+#     green:   '0xb8bb26'
+#     yellow:  '0xfabd2f'
+#     blue:    '0x83a598'
+#     magenta: '0xd3869b'
+#     cyan:    '0x8ec07c'
+#     white:   '0xebdbb2'
+
+
+# Colors (Gruvbox Material Dark Medium)
+# colors:
+#   primary:
+#     background: '0x282828'
+#     foreground: '0xdfbf8e'
+
+#   normal:
+#     black:   '0x665c54'
+#     red:     '0xea6962'
+#     green:   '0xa9b665'
+#     yellow:  '0xe78a4e'
+#     blue:    '0x7daea3'
+#     magenta: '0xd3869b'
+#     cyan:    '0x89b482'
+#     white:   '0xdfbf8e'
+
+#   bright:
+#     black:   '0x928374'
+#     red:     '0xea6962'
+#     green:   '0xa9b665'
+#     yellow:  '0xe3a84e'
+#     blue:    '0x7daea3'
+#     magenta: '0xd3869b'
+#     cyan:    '0x89b482'
+#     white:   '0xdfbf8e'
+
+
+# From the famous Cobalt2 sublime theme
+# Source : https://github.com/wesbos/cobalt2/tree/master/Cobalt2
+# colors:
+#   # Default colors
+#   primary:
+#     background: '0x122637'
+#     foreground: '0xffffff'
+
+#   # Colors the cursor will use if `custom_cursor_colors` is true
+#   cursor:
+#     text: '0x122637'
+#     cursor: '0xf0cb09'
+
+#   # Normal colors
+#   normal:
+#     black:   '0x000000'
+#     red:     '0xff0000'
+#     green:   '0x37dd21'
+#     yellow:  '0xfee409'
+#     blue:    '0x1460d2'
+#     magenta: '0xff005d'
+#     cyan:    '0x00bbbb'
+#     white:   '0xbbbbbb'
+
+#   # Bright colors
+#   bright:
+#     black:   '0x545454'
+#     red:     '0xf40d17'
+#     green:   '0x3bcf1d'
+#     yellow:  '0xecc809'
+#     blue:    '0x5555ff'
+#     magenta: '0xff55ff'
+#     cyan:    '0x6ae3f9'
+#     white:   '0xffffff'
+
+
+selection:
+  # This string contains all characters that are used as separators for
+  # "semantic words" in Alacritty.
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  save_to_clipboard: false
+
+cursor:
+  style:
+    shape: Block
+    blinking: Off
+  vi_mode_style: None
+  blink_interval: 750
+
+live_config_reload: true
+#working_directory: None
+
+key_bindings:
+  - { key: PageUp,    mods: Shift,   mode: ~Alt,        action: ScrollPageUp,  }
+  - { key: PageDown,  mods: Shift,   mode: ~Alt,        action: ScrollPageDown }
+  - { key: Home,      mods: Shift,   mode: ~Alt,        action: ScrollToTop,   }
+  - { key: End,       mods: Shift,   mode: ~Alt,        action: ScrollToBottom }
+  - { key: N,         mods: Control,                    action: SpawnNewInstance }
