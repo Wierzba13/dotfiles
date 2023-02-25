@@ -17,7 +17,7 @@
 :set guifont=Source\ Code\ Pro\ for\ Powerline:h15:cANSI
 
 
-call plug#begin('C:\Users\ReVoo\AppData\Local\nvim\autoload\plugged')
+call plug#begin('C:\Users\HERE_TYPE_YOUR_USER_NAME\AppData\Local\nvim\autoload\plugged')
 
 Plug 'https://github.com/preservim/nerdtree' " NerdTree
 Plug 'https://github.com/vim-airline/vim-airline' " Status bar
